@@ -16,7 +16,7 @@ All three scripts work in a common “HTM-style” family of metrics:
   A 180° twist of a layer counts as one move (just like a 90° twist).  
   So every generator is either a ±90° turn or a 180° turn.
 
-What *differs* across 2×2, 3×3, and 4×4 is **which layers are allowed to turn**.
+What differs across 2×2, 3×3, and 4×4 is which layers are allowed to turn.
 
 For the 2×2, we use a slightly nonstandard but very natural choice:
 
@@ -57,9 +57,9 @@ So from the solved 4×4 state, \(b_M(1) = 36\).
 
 **Summary of metrics**
 
-- 2×2: HTM-style metric, **3 faces only** (3-face HTM), 9 generators.  
+- 2×2: HTM-style metric, 3 faces only (3-face HTM), 9 generators.  
 - 3×3: standard **face-turn HTM**, 6 faces, 18 generators.  
-- 4×4: **faces+slice HTM**, 6 faces + 6 inner slices, 36 generators.
+- 4×4: faces+slice HTM, 6 faces + 6 inner slices, 36 generators.
 
 Steps we implemented:
 1. **Run the Magma scripts** to obtain tables of branching for each size.
