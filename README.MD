@@ -12,7 +12,7 @@ The three files correspond to cubes of linear size 2, 3, and 4:
 
 All three scripts work in a common “HTM-style” family of metrics. A 180° twist of a layer counts as one move (just like a 90° twist). So every generator is either a ±90° turn or a 180° turn.
 
-What differs across 2×2, 3×3, and 4×4 is which layers are allowed to turn. For the 2×2, we use a slightly nonstandard but very natural choice: We generate the group with **only three faces**, e.g. \(R, U, F\). The other faces L, D, B are conjugate to these by whole-cube rotations, so they are redundant as generators.
+What differs across 2×2, 3×3, and 4×4 is which layers are allowed to turn. For the 2×2, we use a slightly nonstandard but very natural choice: We generate the group with only three faces, e.g. \(R, U, F\). The other faces L, D, B are conjugate to these by whole-cube rotations, so they are redundant as generators.
 
 This is what we refer to (informally) as “3-face HTM”: structurally HTM (quarter + half turns, half turns cost 1), but restricted to the minimal 3-face generating set.
 
