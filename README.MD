@@ -21,9 +21,6 @@ Consequences:
 - From the solved 2×2 state, there are **9 neighbors**, so \(b_M(1) = 9\).
 - All other face turns can still be realized as words in this generating set; we just don’t count them as primitive moves.
 
-For the 3×3, we use the **usual face-turn HTM** on all six faces: So from the solved 3×3 state, \(b_M(1) = 18\).
-
-For the 4×4, we extend HTM to include inner slice turns. We keep all 18 outer face moves as above. We add quarter and half turns of each **single inner slice** about the three face axes (x, y, z).  
-There are 2 inner slices per axis × 3 axes = 6 slices; each slice has 3 HTM moves (±90°, 180°) = 18 slice generators.
+For the 3x3, we use the **usual face-turn HTM** on all six faces. For the 4x4, we extend HTM to include inner slice turns. We keep all 18 outer face moves as above. We add quarter and half turns of each **single inner slice** about the three face axes (x, y, z).
 
 To replicate, run the Magma scripts to obtain tables of branching for each size. **Export to CSV**, use the Python plotting script in this repo to draw: **branching-factor curves:** \(r \mapsto b_M(r)\), **entropy curves:** \(r \mapsto H_M(r)\), producing the combined plots shown for 2x2, 3x3, and 4x4.
