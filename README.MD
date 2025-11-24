@@ -26,22 +26,4 @@ For the 3×3, we use the **usual face-turn HTM** on all six faces: So from the s
 For the 4×4, we extend HTM to include inner slice turns. We keep all 18 outer face moves as above. We add quarter and half turns of each **single inner slice** about the three face axes (x, y, z).  
 There are 2 inner slices per axis × 3 axes = 6 slices; each slice has 3 HTM moves (±90°, 180°) = 18 slice generators.
 
-Total move set:
-\[
-  M_{4\times4}
-    = M_{3\times3}
-      \cup \Sigma_{\text{slice}},
-\]
-with \(|M_{4\times4}| = 18 \text{ (faces)} + 18 \text{ (slices)} = 36\) generators.
-
-So from the solved 4×4 state, \(b_M(1) = 36\).
-
-Summary of metrics: 2×2: HTM-style metric, 3 faces only (3-face HTM), 9 generators. 3×3: standard **face-turn HTM**, 6 faces, 18 generators. 4×4: faces+slice HTM, 6 faces + 6 inner slices, 36 generators.
-
-Steps we implemented:
-1. **Run the Magma scripts** to obtain tables of branching for each size.
-2. **Export to CSV** (or copy-paste into a text file).
-3. Use the Python plotting script to draw:
-   - **branching-factor curves:** \(r \mapsto b_M(r)\),
-   - **entropy curves:** \(r \mapsto H_M(r)\),
-   producing the combined plots shown for 2×2, 3×3, and 4×4.
+To replicate, run the Magma scripts to obtain tables of branching for each size. **Export to CSV**, use the Python plotting script in this repo to draw: **branching-factor curves:** \(r \mapsto b_M(r)\), **entropy curves:** \(r \mapsto H_M(r)\), producing the combined plots shown for 2x2, 3x3, and 4x4.
